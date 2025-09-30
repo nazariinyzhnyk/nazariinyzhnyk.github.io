@@ -4,8 +4,54 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>nazar</title>
+  <link rel="icon" href="meta/favicon.png" />
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script defer src="assets/js/main.js"></script>
 </head>
 <body>
-    <h1>Welcome! 🤗</h1>
+  <header class="site-header">
+    <a class="brand" href="/">YN</a>
+    <nav aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <button id="theme-toggle" class="ghost" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Hi, I’m Nazar</h1>
+      <p>I build things. More about me here:</p>
+      <p>
+        <a class="btn" href="projects.html">See projects</a>
+        <a class="btn secondary" href="about.html">About me</a>
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Latest project</h2>
+        <p>Short blurb about something cool.</p>
+      </article>
+      <article class="card">
+        <h2>Writing</h2>
+        <p>Link out to notes hosted as plain HTML pages.</p>
+      </article>
+      <article class="card">
+        <h2>Contact</h2>
+        <p><a href="mailto:you@example.com">you@example.com</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>
+        © <span id="year"></span> 
+        Nazarii Nyzhnyk:
+        💻 <a href="https://github.com/nazariinyzhnyk">GitHub</a>
+        📄 <a href="https://www.linkedin.com/in/nazariinyzhnyk/">LinkedIn</a>
+    </small>
+  </footer>
 </body>
 </html>

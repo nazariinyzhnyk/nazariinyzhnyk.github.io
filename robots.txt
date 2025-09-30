@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nazariinyzhnyk.github.io/sitemap.xml
