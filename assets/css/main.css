@@ -25,12 +25,12 @@ body{
 a{color:var(--accent); text-decoration:none}
 a:hover{text-decoration:underline}
 
-.container{max-width:960px; margin:auto; padding:2rem}
+.container{max-width:960px; margin:auto; padding:0 2rem 0 2rem}
 .site-header, .site-footer{
   display:flex; align-items:center; justify-content:space-between;
   padding:1rem 2rem; border-bottom:1px solid #e5e7eb1a;
 }
-.site-footer{border-top:1px solid #e5e7eb1a; border-bottom:none}
+.site-footer{border-top:1px solid #e5e7eb1a; border-bottom:none; margin-top:3rem}
 
 .brand{font-weight:700; font-size:1.125rem}
 nav a{margin-right:1rem}
@@ -38,11 +38,12 @@ button.ghost{
   background:transparent; border:1px solid #e5e7eb3a; color:inherit;
   padding:.4rem .7rem; border-radius:999px; cursor:pointer;
 }
-.btn{display:inline-block; background:var(--accent); color:#fff; padding:.6rem 1rem; border-radius:999px}
+.btn{display:inline-block; background:var(--accent); color:#fff; padding:.3rem 0.5rem; border-radius:999px}
 .btn.secondary{background:transparent; color:var(--accent); border:1px solid var(--accent)}
-.hero{padding:3rem 0}
+.hero{padding:0 0 0 0}
 .grid{
   display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
   gap:1rem;
 }
 .card{background:var(--card); padding:1rem; border-radius:var(--radius)}
+.card h2{margin-top:0; margin-bottom:0.5rem}
