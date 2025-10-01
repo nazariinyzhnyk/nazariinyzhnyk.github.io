@@ -45,7 +45,14 @@ function initializeThemeToggle() {
   const toggle = document.getElementById('theme-toggle');
   if (toggle) {
     const stored = localStorage.getItem('theme');
-    if (stored) document.documentElement.setAttribute('data-theme', stored);
+    // Set dark theme as default if no theme is stored
+    const theme = stored || 'dark';
+    document.documentElement.setAttribute('data-theme', theme);
+    
+    // Store the default theme if nothing was stored before
+    if (!stored) {
+      localStorage.setItem('theme', 'dark');
+    }
 
     toggle.addEventListener('click', () => {
       const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';

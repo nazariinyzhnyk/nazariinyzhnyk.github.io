@@ -3,18 +3,18 @@
   --text: #111111;
   --muted: #666;
   --card: #f6f6f6;
-  --accent: #2563eb;
+  --accent: #4078c0;
   --radius: 14px;
 }
 
 @media (prefers-color-scheme: dark){
   :root{
-    --bg:#0b0b0c; --text:#f5f5f5; --muted:#a1a1aa; --card:#151517;
+    --bg:#0b0b0c; --text:#c4c6c9; --muted:#a1a1aa; --card:#151517;
   }
 }
 
 [data-theme="dark"]{
-  --bg:#0b0b0c; --text:#f5f5f5; --muted:#a1a1aa; --card:#151517;
+  --bg:#0b0b0c; --text:#c4c6c9; --muted:#a1a1aa; --card:#151517;
 }
 
 *{box-sizing:border-box}
