@@ -1,27 +1,42 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <title>404</title>
-    <link rel="icon" href="meta/favicon.png"/>
-    <link rel="stylesheet" href="assets/css/normalize.css"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <script defer src="assets/js/main.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 · nazar@nyzhnyk:~$</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#030703" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
 </head>
 <body>
-  <div id="header-placeholder"></div>
-
-  <main class="container">
-    <div style="display:flex;justify-content:center;">
-      <h1>😭 Ooooooooops — this page doesn't exist</h1>
-    </div>
-    <div style="display:flex;justify-content:center;">
-      <img src="meta/404_boston.png" alt="Page not found illustration" style="max-width:400px;width:100%;height:auto;border-radius:16px;" />
+  <div class="crt" aria-hidden="true"></div>
+  <main class="screen">
+    <header class="titlebar">
+      <div class="lights" aria-hidden="true"><span class="light red"></span><span class="light yellow"></span><span class="light green"></span></div>
+      <div class="title">nazar@nyzhnyk: ~ — zsh</div>
+      <div></div>
+    </header>
+    <div class="term">
+      <h1 class="sr-only">404 — page not found</h1>
+      <p class="prompt"><span class="ps1"><b>guest</b>@nyzhnyk<i>:</i><u>~</u><i>$</i></span> <span class="cmd">cd <span id="path">/somewhere</span></span></p>
+      <p style="color: var(--red)">zsh: no such file or directory (error 404)</p>
+      <p class="dim"># there's only one page now. redirecting home in <span id="n">5</span>…</p>
+      <p style="margin-top: 16px"><a href="/">[ cd ~ ]</a></p>
     </div>
   </main>
-
-  <div id="footer-placeholder"></div>
-  
+  <script>
+    document.getElementById('path').textContent = location.pathname;
+    var n = 5, el = document.getElementById('n');
+    setInterval(function () {
+      n -= 1;
+      if (n <= 0) location.replace('/');
+      else el.textContent = n;
+    }, 1000);
+  </script>
 </body>
 </html>

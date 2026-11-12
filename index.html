@@ -2,45 +2,199 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>nazar</title>
-  <link rel="icon" href="meta/favicon.png" />
-  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>nazar@nyzhnyk:~$</title>
+  <meta name="description" content="Nazarii Nyzhnyk — Senior Applied Data Scientist at Microsoft in Prague, making agents smarter and faster. 8+ years of shipping ML: LLMs, NLP, RAG, agents." />
+  <meta name="author" content="Nazarii Nyzhnyk" />
+  <meta name="theme-color" content="#030703" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="canonical" href="https://nazariinyzhnyk.github.io/" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Nazarii Nyzhnyk — Senior Applied Data Scientist @ Microsoft" />
+  <meta property="og:description" content="Making agents smarter and faster. Prague. Supervised by a Boston terrier." />
+  <meta property="og:url" content="https://nazariinyzhnyk.github.io/" />
+  <meta property="og:image" content="https://nazariinyzhnyk.github.io/assets/img/avatar.jpg" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" href="favicon.ico" sizes="48x48" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" />
   <link rel="stylesheet" href="assets/css/main.css" />
+
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!still && !sessionStorage.getItem('booted')) d.classList.add('intro');
+      } catch (e) {}
+      // Never leave content hidden if main.js fails to take over the intro.
+      setTimeout(function () { if (!window.__intro) d.classList.remove('intro'); }, 4000);
+    })();
+  </script>
   <script defer src="assets/js/main.js"></script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nazarii Nyzhnyk",
+      "alternateName": "Nazar",
+      "jobTitle": "Senior Applied Data Scientist",
+      "worksFor": { "@type": "Organization", "name": "Microsoft" },
+      "address": { "@type": "PostalAddress", "addressLocality": "Prague", "addressCountry": "CZ" },
+      "alumniOf": "Igor Sikorsky Kyiv Polytechnic Institute",
+      "url": "https://nazariinyzhnyk.github.io/",
+      "sameAs": [
+        "https://github.com/nazariinyzhnyk",
+        "https://www.linkedin.com/in/nazariinyzhnyk/",
+        "https://www.kaggle.com/nazariinyzhnyk"
+      ]
+    }
+  </script>
 </head>
 <body>
-  <div id="header-placeholder"></div>
+  <canvas id="rain" aria-hidden="true"></canvas>
+  <div class="crt" aria-hidden="true"></div>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Hi, I'm Nazar 👋 </h1>
-      <div style="display:flex;justify-content:center;">
-        <img src="meta/pic.jpg" alt="me and dog photo" style="max-width:400px;width:100%;height:auto;border-radius:16px;" />
-      </div>
-      <p>I build things. More about me here:
-      <a class="btn" href="meta/nazariinyzhnyk.pdf" download>get cv</a></p>
-    </section>
+  <div id="boot" class="boot" aria-hidden="true"></div>
 
-    <section class="grid">
-      <article class="card">
-        <h2>🤝 Contact</h2>
-        <p><a href="mailto:nazar.nyzhnyk@gmail.com">nazar.nyzhnyk@gmail.com</a></p>
-        <p><a href="mailto:nazar.nyzhnyk@proton.me">nazar.nyzhnyk@proton.me</a></p>
-        <p><a href="https://t.me/nazarento">telegram</a></p>
-      </article>
-      <article class="card">
-        <h2>🔗 Follow</h2>
-        <p><a href="https://www.linkedin.com/in/nazariinyzhnyk/">LinkedIn</a></p>
-      </article>
-      <article class="card">
-        <h2>🐙 Contribute</h2>
-        <p><a href="https://github.com/nazariinyzhnyk">GitHub</a></p>
-        <p><a href="https://www.kaggle.com/nazariinyzhnyk">Kaggle</a></p>
-      </article>
-    </section>
+  <main class="screen" id="screen">
+    <header class="titlebar">
+      <div class="lights" aria-hidden="true"><i class="light red"></i><i class="light yellow"></i><i class="light green"></i></div>
+      <div class="title">nazar@nyzhnyk: ~ — zsh — <span id="dims">120×42</span></div>
+      <div class="title-right" aria-hidden="true">⌥ ⌘</div>
+    </header>
+
+    <div class="term" id="term">
+      <h1 class="sr-only">Nazarii Nyzhnyk — Senior Applied Data Scientist at Microsoft</h1>
+
+      <section class="block" id="links">
+        <p class="prompt"><span class="ps1"><b>nazar</b>@nyzhnyk<i>:</i><u>~</u><i>$</i></span> <span class="cmd">ls -la ~/links</span></p>
+        <div class="out">
+          <p class="dim">total 7</p>
+          <ul class="lsla">
+            <li><span class="perm">lrwxr-xr-x  1 nazar staff</span> <a href="https://github.com/nazariinyzhnyk" target="_blank" rel="noopener me"><span class="name">github</span> <span class="arrow">-&gt;</span> github.com/nazariinyzhnyk</a></li>
+            <li><span class="perm">lrwxr-xr-x  1 nazar staff</span> <a href="https://github.com/nazarento" target="_blank" rel="noopener me"><span class="name">github.alt</span> <span class="arrow">-&gt;</span> github.com/nazarento</a></li>
+            <li><span class="perm">lrwxr-xr-x  1 nazar staff</span> <a href="https://www.linkedin.com/in/nazariinyzhnyk/" target="_blank" rel="noopener me"><span class="name">linkedin</span> <span class="arrow">-&gt;</span> linkedin.com/in/nazariinyzhnyk</a></li>
+            <li><span class="perm">lrwxr-xr-x  1 nazar staff</span> <a href="https://www.kaggle.com/nazariinyzhnyk" target="_blank" rel="noopener me"><span class="name">kaggle</span> <span class="arrow">-&gt;</span> kaggle.com/nazariinyzhnyk</a></li>
+            <li><span class="perm">lrwxr-xr-x  1 nazar staff</span> <a href="https://t.me/nazarento" target="_blank" rel="noopener"><span class="name">telegram</span> <span class="arrow">-&gt;</span> t.me/nazarento</a></li>
+            <li><span class="perm">-rw-r--r--  1 nazar staff</span> <a href="mailto:nazar.nyzhnyk@gmail.com"><span class="name">mail</span> <span class="arrow">-&gt;</span> nazar.nyzhnyk@gmail.com</a></li>
+            <li><span class="perm">-rw-------  1 nazar staff</span> <a href="mailto:nazar.nyzhnyk@proton.me"><span class="name">mail.enc</span> <span class="arrow">-&gt;</span> nazar.nyzhnyk@proton.me</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block" id="whoami">
+        <p class="prompt"><span class="ps1"><b>nazar</b>@nyzhnyk<i>:</i><u>~</u><i>$</i></span> <span class="cmd">neofetch</span></p>
+        <div class="out neofetch">
+          <div class="avatar">
+            <img src="assets/img/avatar-dither.png" width="288" height="288" alt="1-bit pixel portrait of Nazar in headphones and a hoodie, hugging his Boston terrier" />
+          </div>
+          <div class="info">
+            <p class="host"><b>nazar</b>@<b>nyzhnyk</b></p>
+            <p class="rule" aria-hidden="true">-------------</p>
+            <dl>
+              <div><dt>Name</dt><dd>Nazarii Nyzhnyk</dd></div>
+              <div><dt>Role</dt><dd>Senior Applied Data Scientist @ Microsoft</dd></div>
+              <div><dt>Process</dt><dd>making agents smarter &amp; faster</dd></div>
+              <div><dt>Uptime</dt><dd><span id="uptime">8 years</span> in ML</dd></div>
+              <div><dt>Location</dt><dd>Prague, CZ 🇨🇿 <span class="dim">(from Kyiv 🇺🇦)</span></dd></div>
+              <div><dt>Kernel</dt><dd>M.Sc. Applied Math, KPI</dd></div>
+              <div><dt>Trophies</dt><dd>5+ hackathon podiums 🏆</dd></div>
+              <div><dt>Langs</dt><dd>uk · en · de · cs <span class="dim">(wip)</span></dd></div>
+              <div><dt>Pet</dt><dd>boston terrier <span class="dim">(has root)</span></dd></div>
+            </dl>
+            <p class="swatches" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="career">
+        <p class="prompt"><span class="ps1"><b>nazar</b>@nyzhnyk<i>:</i><u>~</u><i>$</i></span> <span class="cmd">git log --graph career</span></p>
+        <div class="out">
+          <ol class="gitlog">
+            <li>
+              <p class="head"><span class="hash">0b5e55e</span> <span class="refs">(<b>HEAD -&gt; main</b>)</span> <span class="when">Apr 2026 — now</span></p>
+              <p class="msg"><strong>Senior Applied Data Scientist</strong> @ Microsoft</p>
+              <p class="body">making agents smarter &amp; faster</p>
+            </li>
+            <li>
+              <p class="head"><span class="hash">5ca1ab1</span> <span class="when">Jan 2023 — Apr 2026</span></p>
+              <p class="msg"><strong>Senior ML Engineer</strong> @ JustAnswer</p>
+              <p class="body">LLMs, RAG &amp; assistants in prod · NLP · fraud, LTV &amp; dispute models · bandits &amp; A/B · FastAPI on k8s</p>
+            </li>
+            <li>
+              <p class="head"><span class="hash">3db0d1e</span> <span class="when">Dec 2020 — Dec 2022</span></p>
+              <p class="msg"><strong>Data Scientist → Tech Lead</strong> @ 3DLOOK</p>
+              <p class="body">3D human body reconstruction from just two photos · led a team of 5</p>
+            </li>
+            <li>
+              <p class="head"><span class="hash">ba11bea</span> <span class="when">Oct 2019 — Dec 2020</span></p>
+              <p class="msg"><strong>Data Scientist</strong> @ SKF Group <span class="dim">(ex-Presenso)</span></p>
+              <p class="body">predictive maintenance · spotting industrial machine failures in sensor time series</p>
+            </li>
+            <li>
+              <p class="head"><span class="hash">c0ffee0</span> <span class="when">Apr 2018 — Aug 2019</span></p>
+              <p class="msg"><strong>Data Scientist</strong> @ PIVIST</p>
+              <p class="body">time-series forecasting for a real-time HFT engine, built from scratch</p>
+            </li>
+            <li class="root">
+              <p class="head"><span class="hash">ba5e000</span> <span class="refs">(<em>tag: v1.0</em>)</span> <span class="when">2013 — 2018</span></p>
+              <p class="msg">initial commit: <strong>B.Sc. + M.Sc. Applied Math</strong> @ Kyiv Polytechnic</p>
+              <p class="body">probability, optimization, data mining &amp; a lot of coffee</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="block" id="stack">
+        <p class="prompt"><span class="ps1"><b>nazar</b>@nyzhnyk<i>:</i><u>~</u><i>$</i></span> <span class="cmd">tree ~/stack</span></p>
+        <div class="out">
+          <p class="tree-root">~/stack</p>
+          <ul class="tree">
+            <li><span class="dir">evals/</span> <span>eval design · metrics · A/B tests</span></li>
+            <li><span class="dir">llm/</span> <span>🤗 transformers · openai · fine-tuning · (Q)LoRA · prompt engineering · embeddings</span></li>
+            <li><span class="dir">rag+agents/</span> <span>langchain · langgraph · llamaindex · smolagents · vector DBs · semantic search · azure ai search</span></li>
+            <li><span class="dir">nlp/</span> <span>classification · summarization · keyword extraction · text generation · spacy · nltk · speech-to-text</span></li>
+            <li><span class="dir">ml/</span> <span>scikit-learn · xgboost · catboost · lightgbm · h2o · statsmodels · tuning · ensembling</span></li>
+            <li><span class="dir">deep-learning/</span> <span>pytorch · pytorch3d · tensorflow · tflite · tfjs · keras</span></li>
+            <li><span class="dir">vision+3d/</span> <span>opencv · detection · segmentation · GANs · landmarks · pose &amp; shape estimation · 2d→3d reconstruction</span></li>
+            <li><span class="dir">time-series/</span> <span>forecasting · anomaly detection · predictive maintenance · trading signals</span></li>
+            <li><span class="dir">data/</span> <span>pandas · numpy · scipy · postgres · mssql · oracle · mongodb · elasticsearch</span></li>
+            <li><span class="dir">serving/</span> <span>fastapi · flask · django · docker · kubernetes · helm</span></li>
+            <li><span class="dir">mlops/</span> <span>ci/cd · github actions · jenkins · dvc · prometheus · dynatrace · pagerduty · pre-commit</span></li>
+            <li><span class="dir">cloud/</span> <span>azure · aws</span></li>
+            <li><span class="dir">viz/</span> <span>plotly · dash · streamlit · gradio · matplotlib · seaborn · tableau · power bi</span></li>
+            <li><span class="dir">langs/</span> <span>python · sql · bash · r · matlab · c</span></li>
+          </ul>
+          <p class="dim tree-sum">14 directories, 0 regrets</p>
+        </div>
+      </section>
+
+      <section class="block idle" aria-hidden="true">
+        <p class="prompt"><span class="ps1"><b>nazar</b>@nyzhnyk<i>:</i><u>~</u><i>$</i></span> <span class="caret"></span></p>
+      </section>
+
+      <footer class="foot dim">
+        <p># © <span id="year">2026</span> nazarii nyzhnyk · hand-written html/css/js · no cookies, no trackers, no frameworks · one dog</p>
+      </footer>
+    </div>
   </main>
 
-  <div id="footer-placeholder"></div>
+  <nav class="tmux" aria-label="Sections">
+    <span class="session">[nazar]</span>
+    <a href="#links" data-win="links">0:links</a>
+    <a href="#whoami" data-win="whoami">1:whoami</a>
+    <a href="#career" data-win="career">2:career</a>
+    <a href="#stack" data-win="stack">3:stack</a>
+    <span class="status-right" aria-hidden="true">"nazar@nyzhnyk" <span id="clock">--:--</span></span>
+  </nav>
 </body>
 </html>
